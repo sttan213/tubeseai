@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource('/post', PostController::class);
 Route::resource('/device', DeviceController::class);
 Route::resource('/wajibpajak', WajibPajakController::class);
+Route::resource('/Ticketing', TicketingController::class);
