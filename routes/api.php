@@ -24,3 +24,4 @@ Route::resource('/post', PostController::class);
 Route::resource('/device', DeviceController::class);
 Route::resource('/wajibpajak', WajibPajakController::class);
 Route::resource('/Ticketing', TicketingController::class);
+Route::resource('/Maintenance', MaintenanceController::class);
