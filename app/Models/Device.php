@@ -33,4 +33,9 @@ class Device extends Model
     {
         return $this->belongsTo(WajibPajak::class);
     }
+
+    public function ticketing()
+    {
+        return $this->hasMany(Ticketing::class);
+    }
 }

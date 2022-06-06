@@ -27,4 +27,8 @@ class Ticketing extends Model
         'assign_to',
         'status',
     ];
+    public function device()
+    {
+        return $this->belongsTo(Device::class);
+    }
 }

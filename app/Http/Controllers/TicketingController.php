@@ -15,13 +15,20 @@ class TicketingController extends Controller
      */
     public function index()
     {
-        $posts = Ticketing::latest()->get();
+        // $posts = Ticketing::latest()->get();
 
+        // return response()->json([
+        //     'success' => true,
+        //     'message' => 'List Data Ticketing',
+        //     'data' => $posts
+        // ], 200); 
+
+        $tiket = Ticketing::with('device')->get();
         return response()->json([
             'success' => true,
-            'message' => 'List Data Ticketing',
-            'data' => $posts
-        ], 200); 
+            'message' => 'List Data',
+            'data' => $tiket,
+            ], 200);
     }
 
     /**
@@ -89,13 +96,20 @@ class TicketingController extends Controller
      */
     public function show($id)
     {
-        $post = Ticketing::findOrFail($id);
+        // $post = Ticketing::findOrFail($id);
 
+        // return response()->json([
+        //     'success' => true,
+        //     'message' => 'Data Ticketing',
+        //     'data' => $post
+        // ], 200);
+
+        $tiket = Ticketing::with('device')->get();
         return response()->json([
             'success' => true,
-            'message' => 'Data Ticketing',
-            'data' => $post
-        ], 200);
+            'message' => 'Detail Data',
+            'data' => $tiket,
+            ], 200);
     }
 
     /**
