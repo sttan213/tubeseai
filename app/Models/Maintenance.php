@@ -25,6 +25,7 @@ class Maintenance extends Model
         'kondisi_awal',
         'penanganan',
         'status_akhir',
+        'created_by',
     ];
 
     public function wajibPajak()

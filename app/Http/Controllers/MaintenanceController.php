@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Maintenance;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Http\Response;
+use Illuminate\Http\JsonResponse;
 class MaintenanceController extends Controller
 {
     /**
@@ -47,7 +48,7 @@ class MaintenanceController extends Controller
             'kondisi_awal' => 'required',
             'penanganan' => 'required',
             'status_akhir' => 'required',
-            'created_by' => auth()->user()->id,
+            
         ]);
 
         if ($validator->fails()) {
@@ -63,7 +64,7 @@ class MaintenanceController extends Controller
             'kondisi_awal' => $request->kondisi_awal,
             'penanganan' => $request->penanganan,
             'status_akhir' => $request->status_akhir,
-            
+            'created_by' => (auth()->user() ) ? auth()->user()->id : 0,
         ]);
 
         if ($post) {
