@@ -49,28 +49,22 @@
             <img src="bgweb.jpeg" alt="">
             <div style="position: absolute; top: 10%; color: rgb(240, 146, 39)">
                 <h3 style="text-align:center; ">Data Pemasangan Alat</h3>
-                <table class="table table-dark table-striped    ">
+                <table class="table table-dark table-striped ">
                     <thead>
                         <tr>
-                            <th scope="col">kd_prov</th>
-                            <th scope="col">kd_kota</th>
                             <th scope="col">client_slug</th>
                             <th scope="col">wajib_pajak_id</th>
-                            <th scope="col">wp_id</th>
-                            <th scope="col">npwpd</th>
                             <th scope="col">name</th>
                             <th scope="col">address</th>
                             <th scope="col">type</th>
                             <th scope="col">contact_name</th>
                             <th scope="col">contact_phone</th>
-                            <th scope="col">npwpd</th>
                             <th scope="col">dev_id</th>
                             <th scope="col">active</th>
                             <th scope="col">gsm</th>
                             <th scope="col">method</th>
                             <th scope="col">dev_created_at</th>
                             <th scope="col">dev_modified_at</th>
-                            <th scope="col">updated_at</th>
                         </tr>
                       </thead>
                       <tbody>
