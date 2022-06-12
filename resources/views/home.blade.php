@@ -40,15 +40,15 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Pembelian Customer</a></li>
-                <li><a class="dropdown-item" href="#">Pemasangan Alat</a></li>
+                <li><a class="dropdown-item" href="datapemasanganalat">Pemasangan Alat</a></li>
                 <li><a class="dropdown-item" href="#">Ketersediaan Barang</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">TICKETING</a>
+              <a class="nav-link" href="dataticketing">TICKETING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MAINTENANCE</a>
+              <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
             </li>
           </ul>
         </div>

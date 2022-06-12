@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('datapemasanganalat', function () {
     return view('pasangalat');
 });
+
+Route::get('datamaintenance', function () {
+    return view('maintenance');
+});
+
+Route::get('dataticketing', function () {
+    return view('ticketing');
+});
