@@ -45,11 +45,11 @@
     </nav>
 
     <section>
-        <div>
+        <div style="position: relative; text-align: center;">
             <img src="bgweb.jpeg" alt="">
-            <div style="position: absolute; top: 10%; left: 40%; color: rgb(240, 146, 39)">
-                <h3>Data Pemasangan Alat</h3>
-                <table class="table table-dark table-striped" style="left: 10%;">
+            <div style="position: absolute; top: 10%; color: rgb(240, 146, 39)">
+                <h3 style="text-align:center; ">Data Pemasangan Alat</h3>
+                <table class="table table-dark table-striped    ">
                     <thead>
                         <tr>
                             <th scope="col">kd_prov</th>
