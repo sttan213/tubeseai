@@ -12,7 +12,7 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>PT. SUBAGA MITRA SOLUSI</title>
+    <title>PT. SUBAGA MITRA SOLUSI-Maintenance</title>
 
     <style>
       body {
@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
+              <a class="nav-link" href="#">BERANDA</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +48,7 @@
               <a class="nav-link" href="dataticketing">TICKETING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
+              <a class="nav-link active" aria-current="page" href="datamaintenance">MAINTENANCE</a>
             </li>
           </ul>
         </div>
@@ -56,27 +56,9 @@
     </nav>
     
     <div class="container-fluid" id="body"><br><br><br><br><br>
-      <h1 style="color: #FF7803; text-align: center; font-size: 2cm; font-weight: bolder; margin-bottom: 10pt;">PT. SUBAGA MITRA SOLUSI</h1><br><br><br><br><br>
-      <div class="row">
-        <div class="col-lg-6" style="color: #FF7803; font-weight: medium; font-size: larger">Visi</div>
-        <div class="col-lg-6" style="color: #FF7803; font-weight: medium; font-size: larger">Misi</div>
-      </div>
-      <div class="row" style="margin-top: 20px;">
-        <div class="col-lg-5" style="color: #ffffff;">Menjadi mitra terbaik serta inovatif dalam memberikan konsultasi, pengembangan software dan hardware sebagai jawaban dari permasalahan kebutuhan IT di Indonesia.</div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5" style="color: #ffffff;">Membangun kepercayaan serta inovasi teknologi dengan prinsip profesional, solusional, pendampingan, kepercayaan dan pelayanan terbaik.</div>
-      </div>
+      <h1 style="color: #FF7803; text-align: center; font-size: 1cm; font-weight: bolder; margin-bottom: 10pt;">Data History Maintenance</h1><br><br><br><br><br>
     </div>
 
-    <footer class="bg-light text-center text-lg-start" style="margin-top: 80px;">
-               
-            <div class="text-center text-white p-3" style="background-color: #ffffff;">
-            <a style="color: #000000">COPYRIGHT © </a>
-            <a style="color: #FF7803">SUBAGA MITRA SOLUSI</a>
-            <a style="color: #000000">2022</a>
-            </div>
-           
-  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>

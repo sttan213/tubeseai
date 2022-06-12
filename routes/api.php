@@ -25,8 +25,6 @@ Route::resource('/device', DeviceController::class);
 Route::resource('/wajibpajak', WajibPajakController::class);
 Route::resource('/Ticketing', TicketingController::class);
 Route::resource('/Maintenance', MaintenanceController::class);
-
-Route::resource('/Maintenance', MaintenanceController::class);
 Route::resource('/Ketersediaan', KetersediaanController::class);
 Route::resource('/Pembelian', PembelianController::class);
 
