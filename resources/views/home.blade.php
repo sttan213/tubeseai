@@ -13,63 +13,71 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>PT. SUBAGA MITRA SOLUSI</title>
+
+    <style>
+      body {
+      background-image: url("bgweb.jpeg");
+      background-color: #341e0a;
+      
+      }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm" style=" background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(0, 0, 0) , rgb(38, 10, 2));">
-        <a class="navbar-brand" href="#">
-                    <img src="logo-subaga.png" width="100" height="50" alt="" style="margin-left:1cm">
-            </a>
-        <div class="container" style="text-align: center; margin-left: 700px; padding: 5px;">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="/" style="color: white">Beranda</a>
-                </li>
-                <li class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Data
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Pembelian Customer</a>
-                      <a class="dropdown-item" href="#">Pemasangan Alat</a>
-                      <a class="dropdown-item" href="#">Ketersediaan Barang</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"  style="color: white">Ticketing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"  style="color: white">Maintenance</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212222;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo-subaga.png" alt="Image" height="45" width="90"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DATA
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pembelian Customer</a></li>
+                <li><a class="dropdown-item" href="#">Pemasangan Alat</a></li>
+                <li><a class="dropdown-item" href="#">Ketersediaan Barang</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TICKETING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MAINTENANCE</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    
+    <div class="container-fluid" id="body"><br><br><br><br><br>
+      <h1 style="color: #FF7803; text-align: center; font-size: 2cm; font-weight: bolder; margin-bottom: 10pt;">PT. SUBAGA MITRA SOLUSI</h1><br><br><br><br><br>
+      <div class="row">
+        <div class="col-lg-6" style="color: #FF7803; font-weight: medium; font-size: larger">Visi</div>
+        <div class="col-lg-6" style="color: #FF7803; font-weight: medium; font-size: larger">Misi</div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-5" style="color: #ffffff;">Menjadi mitra terbaik serta inovatif dalam memberikan konsultasi, pengembangan software dan hardware sebagai jawaban dari permasalahan kebutuhan IT di Indonesia.</div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5" style="color: #ffffff;">Membangun kepercayaan serta inovasi teknologi dengan prinsip profesional, solusional, pendampingan, kepercayaan dan pelayanan terbaik.</div>
+      </div>
+    </div>
 
-    <section>
-        <div>
-            <img src="bgweb.jpeg" alt="">
-            <div style="position: absolute; top: 50%; left: 35%; color: rgb(240, 146, 39)">
-            <h1> PT. SUBAGA MITRA SOLUSI </h1>
-            <div class="row row-cols-1 row-cols-md-2 g-2" style="position: absolute; top: 300%;">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">VISI</h5>
-                      <p class="card-text">Menjadi mitra terbaik serta inovatif dalam memberikan konsultasi, pengembangan software dan hardware sebagai jawaban dari permasalahan kebutuhan IT di Indonesia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">MISI</h5>
-                      <p class="card-text">Membangun kepercayaan serta inovasi teknologi dengan prinsip profesional, solusional, pendampingan, kepercayaan dan pelayanan terbaik.</p>
-                    </div>
-                  </div>
-                </div>
-        </div>
-    </section>
-    <footer class="text-center" style=" background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(0, 0, 0) , rgb(38, 10, 2));">
-        <p style="color: white"> COPYRIGHT © SUBAGA MITRA SOLUSI 2022</p>
-    </footer>
+    <footer class="bg-light text-center text-lg-start" style="margin-top: 80px;">
+               
+            <div class="text-center text-white p-3" style="background-color: #ffffff;">
+            <a style="color: #000000">COPYRIGHT © </a>
+            <a style="color: #FF7803">SUBAGA MITRA SOLUSI</a>
+            <a style="color: #000000">2022</a>
+            </div>
+           
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
