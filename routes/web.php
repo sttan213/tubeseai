@@ -34,5 +34,5 @@ Route::get('dataketersediaan', function () {
 });
 
 Route::get('datapembelian', function () {
-    return view('Pembelian');
+    return view('pembelian');
 });
