@@ -41,7 +41,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Pembelian Customer</a></li>
                 <li><a class="dropdown-item" href="datapemasanganalat">Pemasangan Alat</a></li>
-                <li><a class="dropdown-item" href="#">Ketersediaan Barang</a></li>
+                <li><a class="dropdown-item" href="dataketersediaan">Ketersediaan Barang</a></li>
               </ul>
             </li>
             <li class="nav-item">

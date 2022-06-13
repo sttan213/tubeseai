@@ -28,3 +28,7 @@ Route::get('datamaintenance', function () {
 Route::get('dataticketing', function () {
     return view('ticketing');
 });
+
+Route::get('dataketersediaan', function () {
+    return view('ketersediaan');
+});

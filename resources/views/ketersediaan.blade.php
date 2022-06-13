@@ -51,42 +51,43 @@
         <div style="position: relative; text-align: center;">
             <img src="bgweb.jpeg" alt="">
             <div style="position: absolute; top: 10%; color: rgb(240, 146, 39)">
-                <h3 style="text-align:center; ">Data Pemasangan Alat</h3>
+                <h3 style="text-align:center; ">Data Ketersediaan</h3>
                 <table class="table table-dark table-striped ">
                     <thead>
                         <tr>
+                            <th scope="col">delivery_order</th>
+                            <th scope="col">date_send</th>
                             <th scope="col">client_slug</th>
-                            <th scope="col">wajib_pajak_id</th>
-                            <th scope="col">name</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">kurir_agent</th>
+                            <th scope="col">shipment_number</th>
+                            <th scope="col">tracking</th>
+                            <th scope="col">instansi</th>
                             <th scope="col">address</th>
-                            <th scope="col">type</th>
-                            <th scope="col">contact_name</th>
-                            <th scope="col">contact_phone</th>
-                            <th scope="col">dev_id</th>
-                            <th scope="col">active</th>
-                            <th scope="col">gsm</th>
-                            <th scope="col">method</th>
-                            <th scope="col">dev_created_at</th>
-                            <th scope="col">dev_modified_at</th>
+                            <th scope="col">nama_penerima</th>
+                            <th scope="col">no_hp</th>
+                            <th scope="col">staff_user_id</th>
+                            <th scope="col">sender_user_id</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
+                          <th scope="row">SMS/2022/DO/01/004</th>
+                          <td>2022-01-27</td>
+                          <td>kab-sumedang</td>
+                          <td>3</td>
                         </tr>
                         <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
+                          <th scope="row">SMS/2022/DO/01/003</th>
+                          <td>2022-01-26</td>
+                          <td>kab-banjarnegara</td>
+                          <td>116</td>
                         </tr>
                         <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">Larry the Bird</td>
-                          <td>@twitter</td>
+                          <th scope="row">SMS/2022/DO/02/001</th>
+                          <td>2022-02-04</td>
+                          <td>kab-lebak</td>
+                          <td>18</td>
                         </tr>
                       </tbody>
                 </table>
