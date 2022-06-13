@@ -32,3 +32,7 @@ Route::get('dataticketing', function () {
 Route::get('dataketersediaan', function () {
     return view('ketersediaan');
 });
+
+Route::get('datapembelian', function () {
+    return view('Pembelian');
+});
