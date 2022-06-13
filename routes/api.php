@@ -24,5 +24,12 @@ Route::resource('/post', PostController::class);
 Route::resource('/device', DeviceController::class);
 Route::resource('/wajibpajak', WajibPajakController::class);
 Route::resource('/Ticketing', TicketingController::class);
+<<<<<<< HEAD
 Route::resource('/Ketersediaan', KetersediaanController::class);
 Route::resource('/Pembelian', PembelianController::class);
+=======
+Route::resource('/Maintenance', MaintenanceController::class);
+Route::resource('/Ketersediaan', KetersediaanController::class);
+Route::resource('/Pembelian', PembelianController::class);
+
+>>>>>>> 2fe3a2223560acb7622419a8e59f58d892e11acc

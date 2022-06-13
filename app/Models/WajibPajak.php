@@ -35,4 +35,9 @@ class WajibPajak extends Model
     {
         return $this->hasMany(Device::class);
     }
+
+    public function maintenance()
+    {
+        return $this->hasMany(Maintenance::class);
+    }
 }
