@@ -24,8 +24,5 @@ Route::resource('/post', PostController::class);
 Route::resource('/device', DeviceController::class);
 Route::resource('/wajibpajak', WajibPajakController::class);
 Route::resource('/Ticketing', TicketingController::class);
-<<<<<<< HEAD
 Route::resource('/Ketersediaan', KetersediaanController::class);
-=======
 Route::resource('/Pembelian', PembelianController::class);
->>>>>>> 008f706281212d5cc517328aec1a8a4ebc3c9fe6

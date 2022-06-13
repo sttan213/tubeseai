@@ -15,12 +15,12 @@ class KetersediaanController extends Controller
      */
     public function index()
     {
-        $posts = Ketersediaan::latest()->get();
+        $ketersediaan = Ketersediaan::latest()->get();
 
         return response()->json([
             'success' => true,
-            'message' => 'List Data Device',
-            'data' => $posts
+            'message' => 'List Data Ketersediaan',
+            'data' => $ketersediaan
         ], 200); 
     }
 

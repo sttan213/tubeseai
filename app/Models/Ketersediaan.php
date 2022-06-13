@@ -25,4 +25,11 @@ class Ketersediaan extends Model
         'staff_user_id',
         'sender_user_id',
     ];
+
+    // public function pembelian()
+    // {
+    //     return $this->belongsTo(Pembelian::class, 'spk_no');
+    // }
+
 }
+

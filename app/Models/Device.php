@@ -38,4 +38,5 @@ class Device extends Model
     {
         return $this->hasMany(Ticketing::class);
     }
+
 }

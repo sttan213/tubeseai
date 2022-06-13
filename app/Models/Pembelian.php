@@ -37,4 +37,9 @@ class Pembelian extends Model
         'stage',
     ];
 
+    public function ketersediaan()
+    {
+        return $this->hasMany(Ketersediaan::class);
+    }
+
 }
