@@ -29,14 +29,8 @@ class Device extends Model
     //     'dev_created_at' => 'datetime',
     // ];
 
-    public function wajibPajak()
-    {
-        return $this->belongsTo(WajibPajak::class);
-    }
-
-    public function ticketing()
-    {
-        return $this->hasMany(Ticketing::class);
-    }
-
+    // public function wajibPajak()
+    // {
+    //     return $this->belongsTo(WajibPajak::class);
+    // }
 }

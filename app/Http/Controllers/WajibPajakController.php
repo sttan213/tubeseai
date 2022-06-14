@@ -15,20 +15,19 @@ class WajibPajakController extends Controller
      */
     public function index()
     {
-        // $posts = WajibPajak::latest()->get();
-
-        // return response()->json([
-        //     'success' => true,
-        //     'message' => 'List Data Wajib Pajak',
-        //     'data' => $posts
-        // ], 200);
-
-        $merchants = WajibPajak::with('device')->get();
+        $posts = WajibPajak::latest()->get();
         return response()->json([
             'success' => true,
-            'message' => 'List Data',
-            'data' => $merchants,
-            ], 200);
+            'message' => 'List Data Wajib Pajak',
+            'data' => $posts
+        ], 200);
+
+        // $merchants = WajibPajak::with('device')->get();
+        // return response()->json([
+        //     'success' => true,
+        //     'message' => 'List Data',
+        //     'data' => $merchants,
+        //     ], 200);
         //return response()->json($merchants, 200);
 
     }
