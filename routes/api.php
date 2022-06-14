@@ -25,3 +25,4 @@ Route::resource('/wajibpajak', WajibPajakController::class);
 Route::resource('/Ticketing', TicketingController::class);
 Route::resource('/Ketersediaan', KetersediaanController::class);
 Route::resource('/Pembelian', PembelianController::class);
+Route::resource('/maintenance', MaintenanceController::class);
