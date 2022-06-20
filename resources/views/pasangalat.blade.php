@@ -15,37 +15,38 @@
     <title>PT. SUBAGA MITRA SOLUSI</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212222;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="logo-subaga.png" alt="Image" height="45" width="90"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="beranda">BERANDA</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" aria-current="page" href="data" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  DATA
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="datapembelian">Pembelian Customer</a></li>
-                  <li><a class="dropdown-item" href="datapemasanganalat">Pemasangan Alat</a></li>
-                  <li><a class="dropdown-item" href="dataketersediaan">Ketersediaan Barang</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dataticketing">TICKETING</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212222;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo-subaga.png" alt="Image" height="45" width="90"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="beranda">BERANDA</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="data" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DATA
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="datapembelian">Pembelian Customer</a></li>
+              <li><a class="dropdown-item" href="datapemasanganalat">Pemasangan Alat</a></li>
+              <li><a class="dropdown-item" href="dataketersediaan">Ketersediaan Barang</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataticketing">TICKETING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 
     <section>
         <div style="position: relative; text-align: center;">
