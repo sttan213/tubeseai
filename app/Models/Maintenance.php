@@ -32,4 +32,9 @@ class Maintenance extends Model
     {
         return $this->belongsTo(WajibPajak::class);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
 }

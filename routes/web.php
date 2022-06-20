@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\Web\KetersediaanController;
+use App\Http\Controllers\Web\MaintenanceController;
+use App\Http\Controllers\Web\PemasanganController;
+use App\Http\Controllers\Web\PembelianController;
+use App\Http\Controllers\Web\TicketingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,22 +22,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('datapemasanganalat', function () {
-    return view('pasangalat');
-});
+Route::get('datapemasanganalat', [PemasanganController::class, 'index']);
 
-Route::get('datamaintenance', function () {
-    return view('maintenance');
-});
+Route::get('datamaintenance', [MaintenanceController::class, 'index']);
 
-Route::get('dataticketing', function () {
-    return view('ticketing');
-});
+Route::get('dataticketing', [TicketingController::class, 'index']);
 
-Route::get('dataketersediaan', function () {
-    return view('ketersediaan');
-});
+Route::get('dataketersediaan', [KetersediaanController::class, 'index']);
 
-Route::get('datapembelian', function () {
-    return view('pembelian');
-});
+Route::get('datapembelian', [PembelianController::class, 'index']);

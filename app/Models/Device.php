@@ -9,7 +9,7 @@ class Device extends Model
 {
     use HasFactory;
 
-     /**
+    /**
      * The table associated with the model.
      *
      * @var string
@@ -29,8 +29,8 @@ class Device extends Model
     //     'dev_created_at' => 'datetime',
     // ];
 
-    // public function wajibPajak()
-    // {
-    //     return $this->belongsTo(WajibPajak::class);
-    // }
+    public function wajibPajak()
+    {
+        return $this->belongsTo(WajibPajak::class);
+    }
 }
