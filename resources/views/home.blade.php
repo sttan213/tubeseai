@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="beranda">BERANDA</a>
+              <a class="nav-link active" aria-current="page" href="/">BERANDA</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="data" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

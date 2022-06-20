@@ -27,20 +27,17 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212222;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="logo-subaga.png" alt="Image" height="45"
-          width="90"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="logo-subaga.png" alt="Image" height="45" width="90"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="beranda">BERANDA</a>
+            <a class="nav-link active" aria-current="page" href="/">BERANDA</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="data" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="data" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               DATA
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -50,7 +47,8 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="dataticketing">TICKETING</a>
+            <a class="nav-link" href="dataticketing">TICKETING</a>
+
           </li>
           <li class="nav-item">
             <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
@@ -92,6 +90,7 @@
           </table>
         </div>
       </div>
+
     </div>
   </div>
 
