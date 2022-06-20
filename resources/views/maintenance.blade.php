@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>PT. SUBAGA MITRA SOLUSI-Maintenance</title>
 
-    <style>
-      body {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>PT. SUBAGA MITRA SOLUSI-Maintenance</title>
+
+  <style>
+    body {
       background-image: url("bgweb.jpeg");
       background-color: #341e0a;
-      
-      }
-    </style>
+
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212222;">
     <div class="container-fluid">
@@ -48,19 +50,50 @@
             <a class="nav-link" href="dataticketing">TICKETING</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="datamaintenance">MAINTENANCE</a>
+            <a class="nav-link active" aria-current="page" href="datamaintenance">MAINTENANCE</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-    
-    <div class="container-fluid" id="body"><br><br><br><br><br>
-      <h1 style="color: #FF7803; text-align: center; font-size: 1cm; font-weight: bolder; margin-bottom: 10pt;">Data History Maintenance</h1><br><br><br><br><br>
-    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="container-fluid" id="body"><br><br><br><br><br>
+    <h1 style="color: #FF7803; text-align: center; font-size: 1cm; font-weight: bolder; margin-bottom: 10pt;">Data
+      History Maintenance</h1><br><br><br><br><br>
+    <div class="row">
+      <div class="col">
+        <div class="table-responsive">
+          <table class="table-dark table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Tanggal</th>
+                <th scope="col">No Maintenance</th>
+                <th scope="col">Wajib Pajak</th>
+                <th scope="col">Device ID</th>
+                <th scope="col">Kondisi</th>
+                <th scope="col">Teknisi</th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach ($maintenances as $maintenance)
+                <tr>
+                  <td>{{ date('Y-m-d', strtotime($maintenance->tgl_mtc)) }}</td>
+                  <td>
+                    MTC-{{ date('ym', strtotime($maintenance->tgl_mtc)) . '-' . str_pad($maintenance->no_mtc, 5, '0', STR_PAD_LEFT) }}
+                  </td>
+                  <td>{{ $maintenance->wajibPajak->name ?? '-' }}</td>
+                  <td>{{ $maintenance->dev_id }}</td>
+                  <td>{{ $maintenance->kondisi_awal }}</td>
+                  <td>{{ $maintenance->user->name ?? '-' }}</td>
+                </tr>
+              @endforeach
+            </tbody>
+          </table>
+        </div>
+      </div>          
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
